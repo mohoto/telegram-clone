@@ -9,6 +9,9 @@
 .sidebarThread:hover {
     background-color: rgba(2, 150, 199);
 }
+.sidebarThread.active{
+    background-color: #2d4671;
+}
 .sidebarThread__details {
     margin-left: 15px;
     position: relative;

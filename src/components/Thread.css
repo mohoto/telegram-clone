@@ -32,14 +32,39 @@
     color: rgba(2, 150, 199);
 }
 .thread__messages {
-    padding: 15px;
+    flex: 1;
+    overflow: scroll;
 }
-.thread__input input {
+/*Pour Safari et chrome*/
+.thread__messages::--webkit-scrollbar {
+    display: none;
+}
+.thread__input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-top: 1px solid rgba(190, 190, 190, .1);
+}
+.thread__input > form {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+.thread__input > form > input {
+    width: 70%;
     outline: none;
-}
-.thread__messages__button {
+    border: none;
+    border-radius: 999px;
+    padding: 5px;
+    background-color: #2d4671;
     color: white;
 }
-.thread__messages__button:hover {
+
+.thread__input > form > button {
+    color: white;
+}
+.thread__input > form > button:hover {
     color: rgba(2, 150, 199);
 }
